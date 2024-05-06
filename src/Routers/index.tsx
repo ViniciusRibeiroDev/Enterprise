@@ -1,32 +1,10 @@
 import { createBrowserRouter } from 'react-router-dom';
-import { Outlet } from 'react-router-dom';
+import { HomePage } from '../Pages/Home';
 
 export const RoutesPages = createBrowserRouter([
   {
     path: '/',
-    element: (
-      <div>
-        <h1>/</h1>
-        <Outlet />
-      </div>
-    ),
-    children: [
-      {
-        path: '/home',
-        element: (
-          <div>
-            <h1>/home</h1>
-            <Outlet />
-          </div>
-        ),
-        children: [
-          {
-            path: 'dashboard',
-            element: <h1>/home/dashboard</h1>,
-          },
-        ],
-      },
-    ],
+    element: <HomePage />,
   },
   {
     path: '/login',
