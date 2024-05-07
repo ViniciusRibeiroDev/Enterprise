@@ -1,29 +1,17 @@
-import { Button } from '../Button';
-import { HeaderStyled } from './style';
+import { VscActivateBreakpoints } from 'react-icons/vsc';
+import { ConteinerButtons, HeaderStyled, LogoStyled } from './style';
+import { ButtonsRender } from './buttonsRender';
 
 export const Header = () => {
   return (
     <HeaderStyled>
-      <div>
-        <span>°</span>
+      <LogoStyled>
+        <VscActivateBreakpoints />
         <h1>Enterprises</h1>
-      </div>
-      <div>
-        <Button
-          type='button'
-          text='Login'
-          $height='48px'
-          $width='142px'
-          $type='outlined'
-        />
-        <Button
-          text='Cadastro'
-          $height='48px'
-          $width='142px'
-          type='button'
-          $type='default'
-        />
-      </div>
+      </LogoStyled>
+      <ConteinerButtons>
+        <ButtonsRender />
+      </ConteinerButtons>
     </HeaderStyled>
   );
 };

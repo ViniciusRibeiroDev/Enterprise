@@ -7,9 +7,16 @@ export const Button = ({
   $type,
   $height,
   $width,
+  onClick,
 }: IButtonProps) => {
   return (
-    <ButtonStyled type={type} $type={$type} $height={$height} $width={$width}>
+    <ButtonStyled
+      type={type}
+      $type={$type}
+      $height={$height}
+      $width={$width}
+      onClick={onClick}
+    >
       {text}
     </ButtonStyled>
   );

@@ -13,4 +13,5 @@ export interface IButtonStyledProps {
 export interface IButtonProps extends IButtonStyledProps {
   type: TType;
   text: string;
+  onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined;
 }

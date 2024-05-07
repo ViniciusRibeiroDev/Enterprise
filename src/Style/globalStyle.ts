@@ -25,4 +25,8 @@ export const GlobalStyle = createGlobalStyle`
     --text1: 0.875rem;
     --text2: 0.75rem;
   } 
+
+  body {
+      font-family: 'Inter', sans-serif;
+  }
 `;
