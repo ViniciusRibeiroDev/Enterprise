@@ -7,6 +7,8 @@ export const ButtonStyled = styled.button<IButtonStyledProps>`
   font-weight: bold;
   font-family: 'Inter', sans-serif;
 
+  cursor: pointer;
+
   height: ${({ $height }) => $height};
   width: ${({ $width }) => $width};
   color: ${({ $type }) =>

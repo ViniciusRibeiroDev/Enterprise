@@ -1,5 +1,5 @@
 import { VscActivateBreakpoints } from 'react-icons/vsc';
-import { ConteinerButtons, HeaderStyled, LogoStyled } from './style';
+import { ConteinerButtonsStyled, HeaderStyled, LogoStyled } from './style';
 import { ButtonsRender } from './buttonsRender';
 
 export const Header = () => {
@@ -9,9 +9,9 @@ export const Header = () => {
         <VscActivateBreakpoints />
         <h1>Enterprises</h1>
       </LogoStyled>
-      <ConteinerButtons>
+      <ConteinerButtonsStyled>
         <ButtonsRender />
-      </ConteinerButtons>
+      </ConteinerButtonsStyled>
     </HeaderStyled>
   );
 };

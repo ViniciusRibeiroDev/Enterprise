@@ -30,7 +30,7 @@ export const LogoStyled = styled.div`
   }
 `;
 
-export const ConteinerButtons = styled.div`
+export const ConteinerButtonsStyled = styled.div`
   display: flex;
   gap: 10px;
 
