@@ -1,5 +1,3 @@
-import { Button } from '../Button';
-
 export const ButtonsRender = () => {
   const href = window.location.pathname;
 
@@ -7,35 +5,20 @@ export const ButtonsRender = () => {
     <>
       {href === '/dashboard' ? (
         <>
-          <Button
-            type='button'
-            text='Logout'
-            $height='48px'
-            $width='142px'
-            $type='outlined'
-            onClick={() => (window.location.href = '/')}
-          />
+          <span onClick={() => (window.location.href = '/')}>Logout</span>
         </>
       ) : (
         <>
-          <Button
-            type='button'
-            text={href === '/' ? 'Login' : 'Home'}
-            $height='48px'
-            $width='142px'
-            $type='outlined'
+          <span
             onClick={() =>
               href === '/login' || href === '/cadastro'
                 ? (window.location.href = '/')
                 : (window.location.href = '/login')
             }
-          />
-          <Button
-            text={href === '/cadastro' ? 'Login' : 'Cadastro'}
-            $height='48px'
-            $width='142px'
-            type='button'
-            $type='default'
+          >
+            {href === '/' ? 'Login' : 'Home'}
+          </span>
+          <span
             onClick={() => {
               if (href === '/cadastro') {
                 window.location.href = '/login';
@@ -43,7 +26,9 @@ export const ButtonsRender = () => {
                 window.location.href = '/cadastro';
               }
             }}
-          />
+          >
+            {href === '/cadastro' ? 'Login' : 'Cadastro'}
+          </span>
         </>
       )}
     </>

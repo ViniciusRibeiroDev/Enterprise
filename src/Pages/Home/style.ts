@@ -8,6 +8,11 @@ export const ConteinerStyled = styled.div`
   padding-bottom: 3%;
 
   width: 100vw;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const ConteinerImgStyled = styled.div`
@@ -20,6 +25,14 @@ export const ConteinerImgStyled = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: 235%;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  @media (max-width: 1024px) {
+    background-size: 300%;
+  }
 `;
 
 export const CointeinerFormStyled = styled.div`
@@ -32,4 +45,9 @@ export const CointeinerFormStyled = styled.div`
   gap: 30px;
 
   margin-right: 5%;
+
+  @media (max-width: 768px) {
+    margin-right: 2%;
+    margin-left: 2%;
+  }
 `;

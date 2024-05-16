@@ -35,4 +35,13 @@ export const ConteinerButtonsStyled = styled.div`
   gap: 10px;
 
   margin-right: 5%;
+
+  span {
+    color: var(--brand1);
+
+    font-size: var(--text1);
+    font-weight: 500;
+
+    cursor: pointer;
+  }
 `;
