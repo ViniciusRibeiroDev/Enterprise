@@ -1,6 +1,6 @@
 import { Header } from '../../Components/Global/Header';
-import { InterpriseList } from '../../Components/HomeComponenets/InterpriseList';
-import { SearchForm } from '../../Components/HomeComponenets/SearchForm';
+import { InterpriseList } from '../../Components/HomeComponents/InterpriseList';
+import { SearchForm } from '../../Components/HomeComponents/SearchForm';
 import {
   CointeinerFormStyled,
   ConteinerStyled,
