@@ -11,6 +11,8 @@ export const EnterpriseSectionStyled = styled.section`
 
   box-shadow: 0 0 10px;
 
+  overflow-y: scroll;
+
   h2 {
     margin-top: 5%;
     margin-left: 5%;
