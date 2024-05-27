@@ -6,6 +6,7 @@ import {
   IHomeProviderProps,
 } from './interface';
 import { api } from '../../API';
+import axios from 'axios';
 
 export const HomeContext = createContext<IHomeProvider>({} as IHomeProvider);
 
@@ -24,7 +25,9 @@ export const HomeProvider = ({ children }: IHomeProviderProps) => {
 
       setCategories(response.data);
     } catch (error) {
-      console.error(error);
+      if (axios.isAxiosError(error)) {
+        console.error(error);
+      }
     }
   };
 
@@ -34,7 +37,9 @@ export const HomeProvider = ({ children }: IHomeProviderProps) => {
 
       setCompanies(response.data);
     } catch (error) {
-      console.error(error);
+      if (axios.isAxiosError(error)) {
+        console.error(error);
+      }
     }
   };
 

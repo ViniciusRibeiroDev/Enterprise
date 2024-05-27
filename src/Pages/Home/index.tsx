@@ -1,4 +1,4 @@
-import { Header } from '../../Components/Global/Header';
+import { Header } from '../../Components/GlobalComponents/Header';
 import { InterpriseList } from '../../Components/HomeComponents/InterpriseList';
 import { SearchForm } from '../../Components/HomeComponents/SearchForm';
 import {

@@ -4,6 +4,7 @@ import { LoginPage } from '../Pages/Login';
 import { RegisterPage } from '../Pages/Register';
 import { DashboardPage } from '../Pages/Dashboard';
 import { HomeProvider } from '../Context/HomeContext';
+import { LoginProvider } from '../Context/LoginContext';
 
 export const RoutesPages = createBrowserRouter([
   {
@@ -16,7 +17,11 @@ export const RoutesPages = createBrowserRouter([
   },
   {
     path: '/login',
-    element: <LoginPage />,
+    element: (
+      <LoginProvider>
+        <LoginPage />
+      </LoginProvider>
+    ),
   },
   {
     path: '/cadastro',
